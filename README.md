@@ -1,0 +1,2 @@
+# GalleryKomi
+Galeria de Komi
