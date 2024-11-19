@@ -1,13 +1,15 @@
 /* Estilos globales */
+/* Estilos globales */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     /* Usamos un gradiente lineal para el fondo */
-    background: linear-gradient(to bottom, #111111, #00eaff, #2cd5ff, #7be6fc, #a8f5f5, #ffffff);
-    color: white;
+    background: linear-gradient(to bottom, #393939, #7074f2, #2cd5ff, #7be6fc, #a8f5f5, #ffffff);
+    color: #2c3e50;
     overflow-x: hidden;
     transition: background 0.3s ease, color 0.3s ease;
 }
+
 
 /* Animación de carga épica */
 .loading-screen {
@@ -16,7 +18,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(20, 20, 20, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,8 +30,8 @@ body {
 }
 
 .spinner {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3a3a3a;
+    border: 16px solid #e0e0e0;
+    border-top: 16px solid #34495e;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -44,7 +46,7 @@ body {
 h2 {
     margin-top: 20px;
     font-size: 1.5rem;
-    color: white;
+    color: rgb(255, 162, 0);
 }
 
 /* Estilos para el interruptor de tema */
@@ -98,6 +100,12 @@ input:checked + .slider:before {
     background: url('futuristic-background.jpg') no-repeat center center/cover;
     text-align: center;
 }
+@media (max-width: 768px) {
+    .landing {
+        background-size: contain; /* Permite que la imagen se ajuste mejor */
+    }
+}
+
 /* Estilo para el título con efecto de brillo */
 .intro h1 {
     font-size: 4rem;
